@@ -8,6 +8,8 @@ All of the business logic for the project is stored here. This project follows t
 2. Providers:
   - Contains all of the state management logic for your models (i.e. user_provider.dart, auth_provider.dart, etc.). These classes allow you to share information between widgets and update the state of your app (See Flutter Provider SDK). This folder can also contain BLoC logic, if needed (https://www.biztechcs.com/blog/flutter-bloc-tutorial/#:~:text=BLoC%20stands%20for%20Business%20Logic,central%20place%20in%20your%20project.)
 
+  App state: any information that you want to share across many parts of your app, and that you want to keep between user sessions, is what we call application state (sometimes also called shared state).
+
      - ChangeNotifier: This one should be extended to provide an object that can be used to send change notifications to its listeners.
      - ChangeNotifierProvider: It has changes from a ChangeNotifier. Child widgets can access the state object and listen the changes
      - Consumer: Rebuilds part of a subtree when the listening state changes.
